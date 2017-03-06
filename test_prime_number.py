@@ -17,6 +17,9 @@ class TestIsPrimeNumber(unittest.TestCase):
         self.assertEqual(prime_numbers.is_prime_number(10), False)
         self.assertEqual(prime_numbers.is_prime_number(7), True)
 
+class TestGetPrimeNumbers(unittest.TestCase):
+
+    pass
 
 if __name__ == "__main__":
     unittest.main()
