@@ -19,6 +19,11 @@ class TestIsPrimeNumber(unittest.TestCase):
 
 class TestGetPrimeNumbers(unittest.TestCase):
 
+    def test_it_rejects_numbers_below_2(self):
+
+        for num in [-1, 0, 1]:
+            self.assertEqual(prime_numbers.get_prime_numbers(num), "Number should be greater than or equal 2")
+
     def test_it_works(self):
 
         self.assertEqual(prime_numbers.get_prime_numbers(10), [2, 3, 5, 7])

@@ -13,6 +13,9 @@ def is_prime_number(num):
 
 def get_prime_numbers(n):
 
+    if n < 2: # prime numbers start from 2
+        return "Number should be greater than or equal 2"
+
     prime_numbers = []
 
     # loop from 2 (since that is the first prime number) to `n`
