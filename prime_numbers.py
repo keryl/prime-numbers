@@ -12,4 +12,14 @@ def is_prime_number(num):
         return True
 
 def get_prime_numbers(n):
-    pass
+
+    prime_numbers = []
+
+    # loop from 2 (since that is the first prime number) to `n`
+    # for each number check if it is a prime number
+
+    for num in range(2, n+1):
+        if is_prime_number(num):
+            prime_numbers.append(num)
+
+    return prime_numbers
