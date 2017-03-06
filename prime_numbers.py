@@ -32,3 +32,6 @@ def get_prime_numbers(n):
             prime_numbers.append(num)
 
     return prime_numbers
+
+if __name__ == "__main__":
+    print(get_prime_numbers(10))
