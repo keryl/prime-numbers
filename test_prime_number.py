@@ -19,7 +19,10 @@ class TestIsPrimeNumber(unittest.TestCase):
 
 class TestGetPrimeNumbers(unittest.TestCase):
 
-    pass
+    def test_it_works(self):
+
+        self.assertEqual(prime_numbers.get_prime_numbers(10), [2, 3, 5, 7])
+
 
 if __name__ == "__main__":
     unittest.main()
